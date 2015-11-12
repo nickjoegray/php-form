@@ -1,153 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>PHP</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-  	<?php 
-			echo "This is working";
-		?>
-    <nav class="top-nav">
-      <div class="container-fluid">
-        <div id="name">Nicholas<br/>Gray</div>
-        <div class="text-right">
-          <img src="images/fb-blk-icon.png">
-          <img src="images/twitter-blk-icon.png">
-          <img src="images/linkedin-blk-icon.png">
-          <img src="images/github-blk-icon.png">
-        </div>
-      </div>
-    </nav>
-
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <div class="container-fluid">
-      <form class="form-horizontal" id="form_members" role="form">
-        <legend>Person</legend>
-        <div clas="form-group">
-          <label for="firstname" class="col-sm-2">First Name</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
-          </div>
-          <label for="lastname" class="col-sm-2">Last Name</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="gender" class="col-sm-2">Gender</label>
-          <div class="col-sm-4">
-            <label class="radio-inline">
-              <input type="radio" name="gender" id="male" value="male"> Male
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="gender" id="female" value="female"> Female
-            </label>
-          </div>
-          <label for="dob" class="col-sm-2">Date of Birth</label>
-          <div class="col-sm-4">
-            <input type="date" class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy">
-          </div>
-        </div>
-        <legend>Address</legend>
-        <div class="form-group">
-          <label for="address" class="col-sm-2">Address</label>
-          <div class="col-sm-4">
-              <input type="text" class="form-control" name="address" id="address" placeholder="Street + No">
-          </div>
-          <label for="city" class="col-sm-2">City</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" list="cities" name="city" id="city" placeholder="City">
-            <datalist id="cities">
-                <option value="Toronto">
-                <option value="Vancouver">
-                <option value="Waterloo">
-                <option value="Montreal">
-            </datalist>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="zipcode" class="col-sm-2">ZIP Code</label>
-          <div class="col-sm-4">
-              <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="ZIP Code">
-          </div>
-          <label for="region" class="col-sm-2">Region</label>
-          <div class="col-sm-4">
-              <select class="form-control" name="region" id="region">
-                  <option>Select a Region</option>
-                  <option>Toronto</option>
-                  <option>Vancouver</option>
-                  <option>Waterloo</option>
-                  <option>Montreal</option>
-              </select>
-          </div>
-        </div>
-        <legend>Contact Info</legend>
-        <div class="form-group">
-          <label for="phone" class="col-sm-2">Phone</label>
-          <div class="col-sm-4">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number">
-          </div>
-          <label for="email" class="col-sm-2">Email</label>
-          <div class="col-sm-4">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-warning" name="submit" id="submit">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div><!-- container-fluid -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-  </body>
-</html>
+<?php
+	$link = mysqli_connect("localhost","8888"," ")  or die("failed to connect to server !!");
+	mysqli_select_db($link,"all_sports");
+	if(isset($_REQUEST['submit']))
+		{
+			$errorMessage = "";
+			$firstname=$_POST['firstname'];
+			$lastname=$_POST['lastname'];
+			$gender=$_POST['gender'];
+			$dob=$_POST['dob'];
+			$address=$_POST['address'];
+			$city=$_POST['city'];
+			$zipcode=$_POST['zipcode'];
+			$region=$_POST['region'];
+			$phone=$_POST['phone'];
+			$email=$_POST['email'];
+	 
+		// Validation will be added here
+		 
+		if ($errorMessage != "" ) {
+			echo "<p class='message'>" .$errorMessage. "</p>" ;
+		}
+		else{
+			//Inserting record in table using INSERT query
+			$insqDbtb="INSERT INTO `all_sports`.`members`
+			(`firstname`, `lastname`, `gender`, `dob`, `address`,
+			`city`, `zipcode`, `region`, `phone`, `email`) VALUES ('$firstname', '$lastname', 
+			'$gender', '$dob', '$address', '$city', '$zipcode', '$region', '$phone', '$email')";
+			mysqli_query($link,$insqDbtb) or die(mysqli_error($link));
+			}
+		}
+?>
